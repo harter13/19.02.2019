@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    public class Producer
+    public class AbstractProduct
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public  Adress Adress { get; set; }
-        public virtual ICollection <RealProduct> RealProducts { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

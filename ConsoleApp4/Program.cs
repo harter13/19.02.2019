@@ -10,10 +10,17 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            using (var ctx = new dbq() )
+            {
+                //Console.WriteLine(ctx.Countries.Count());
+                //Console.ReadKey();
 
+
+                //1
+
+                var contriii = ctx.Producers.Select(p => p.Adress.Country.Name).Distinct().ToList();
+            }
         }
-
-
     }
 
 }

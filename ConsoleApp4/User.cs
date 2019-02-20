@@ -15,6 +15,5 @@ namespace ConsoleApp4
         public int Age { get; set; }
         public string Email { get; set; }
         public virtual Gender Gender { get; set; }
-
     }
 }
